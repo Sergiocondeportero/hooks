@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import ButtonClick from './components/ButtonClick';
+import ShoppingList from './components/ShoppingList';
+import InputChange from './components/InputChange';
+import MyButton from './components/MyButton';
+import TextInput from './components/TextInput';
+import ToggleVisibility from './components/ToggleVisibility';
+import RegistrationForm from './components/RegistrationForm';
+import TodoList from './components/TodoList';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <>
+<ShoppingList/>
+  <ButtonClick />
+<InputChange/>
+<MyButton/>
+<TextInput/>
+<ToggleVisibility />
+<RegistrationForm />
+<TodoList/>
+</>
     </div>
   );
 }
